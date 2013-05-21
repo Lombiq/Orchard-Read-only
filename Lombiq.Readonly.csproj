@@ -93,7 +93,7 @@
     <Compile Include="Models\ReadonlySettingsPart.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\EditorTemplates\Parts.ReadonlySettings.cshtml" />
+    <Content Include="Views\EditorTemplates\Parts.ReadonlySettings.SiteSettings.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Placement.info" />

@@ -19,9 +19,9 @@ namespace Lombiq.Readonly.Drivers
 
         protected override DriverResult Editor(ReadonlySettingsPart part, dynamic shapeHelper)
         {
-            return ContentShape("Parts_ReadonlySettings_Edit",
+            return ContentShape("Parts_ReadonlySettings_SiteSettings",
                 () => shapeHelper.EditorTemplate(
-                    TemplateName: "Parts.ReadonlySettings",
+                    TemplateName: "Parts.ReadonlySettings.SiteSettings",
                     Model: part,
                     Prefix: Prefix));
         }
