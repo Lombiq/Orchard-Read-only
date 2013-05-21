@@ -83,7 +83,20 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Commands\ReadonlyCommands.cs" />
+    <Compile Include="Drivers\ReadonlyDriver.cs" />
+    <Compile Include="Drivers\ReadonlySettingsPartDriver.cs" />
+    <Compile Include="Handlers\ReadonlySettingsPartHandler.cs" />
+    <Compile Include="Migrations.cs" />
+    <Compile Include="Models\ReadonlySettingsPart.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\EditorTemplates\Parts.ReadonlySettings.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Placement.info" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
