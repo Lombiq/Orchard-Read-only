@@ -16,7 +16,7 @@ namespace Lombiq.Readonly
                     .ContentPartRecord()
                     .Column<bool>("Readonly")
                     .Column<string>("Message", column => column.WithLength(2048))
-            );
+                );
 
 
             return 1;
