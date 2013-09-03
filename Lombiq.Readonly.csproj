@@ -90,6 +90,7 @@
     <Compile Include="Drivers\ReadonlySettingsPartDriver.cs" />
     <Compile Include="Handlers\ReadonlySettingsPartHandler.cs" />
     <Compile Include="Migrations.cs" />
+    <Compile Include="Models\IReadonlyAspect.cs" />
     <Compile Include="Models\ReadonlySettingsPart.cs" />
   </ItemGroup>
   <ItemGroup>

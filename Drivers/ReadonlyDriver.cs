@@ -27,7 +27,7 @@ namespace Lombiq.Readonly.Drivers
 
         protected override DriverResult Editor(ContentPart part, IUpdateModel updater, dynamic shapeHelper)
         {
-            var readonlyPart = _siteService.GetSiteSettings().As<ReadonlySettingsPart>();
+            var readonlyPart = _siteService.GetSiteSettings().As<IReadonlyAspect>();
             if (readonlyPart.Readonly && part.ContentItem.ContentType != "Site")
             {
                 updater.AddModelError("SiteIsReadonly", T(readonlyPart.Message));
