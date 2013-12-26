@@ -28,7 +28,7 @@ namespace Lombiq.Readonly.Commands
         [OrchardSwitches("Force")]
         public void SetReadonly()
         {
-            var part = _siteService.GetSiteSettings().As<ReadonlySettingsPart>();
+            var part = _siteService.GetSiteSettings().As<IReadonlyAspect>();
             part.Readonly = true;
             part.Force = Force;
 
@@ -39,7 +39,7 @@ namespace Lombiq.Readonly.Commands
         [CommandHelp("readonly reset\r\n\t" + "Enables the editing of the site.")]
         public void ResetReadonly()
         {
-            var part = _siteService.GetSiteSettings().As<ReadonlySettingsPart>();
+            var part = _siteService.GetSiteSettings().As<IReadonlyAspect>();
             part.Readonly = false;
             part.Force = false;
 
@@ -50,7 +50,7 @@ namespace Lombiq.Readonly.Commands
         [CommandHelp("readonly toggle [/Force:true|false]\r\n\t" + "Toggles the site between the read-only and enabled states. If Force is specified (defaults to false) the site can only be switched back by commands but not from the admin UI.")]
         public void ToggleReadonly()
         {
-            if (_siteService.GetSiteSettings().As<ReadonlySettingsPart>().Readonly) ResetReadonly();
+            if (_siteService.GetSiteSettings().As<IReadonlyAspect>().Readonly) ResetReadonly();
             else SetReadonly();
         }
     }

@@ -28,7 +28,7 @@ namespace Lombiq.Readonly
 
         public IEnumerable<NotifyEntry> GetNotifications()
         {
-            if (_siteService.GetSiteSettings().As<ReadonlySettingsPart>().Readonly)
+            if (_siteService.GetSiteSettings().As<IReadonlyAspect>().Readonly)
             {
                 yield return new NotifyEntry { Message = T("The site is currently in read-only mode: no changes can be made and no changes will be preserved. Please wait a few minutes."), Type = NotifyType.Warning };
             }
