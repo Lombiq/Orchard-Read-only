@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using Orchard.ContentManagement;
+using Orchard.ContentManagement.FieldStorage.InfosetStorage;
 using Orchard.ContentManagement.Records;
 
 namespace Lombiq.Readonly.Models
@@ -13,6 +14,12 @@ namespace Lombiq.Readonly.Models
         {
             get { return Record.Readonly; }
             set { Record.Readonly = value; }
+        }
+
+        public bool Force
+        {
+            get { return bool.Parse(this.As<InfosetPart>().Get("ReadonlySettingsPart", "Force") ?? "False"); }
+            set { this.As<InfosetPart>().Set("ReadonlySettingsPart", "Force", value.ToString()); }
         }
 
         public string Message

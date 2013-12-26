@@ -6,6 +6,7 @@ using Lombiq.Readonly.Models;
 using Orchard.ContentManagement;
 using Orchard.ContentManagement.Drivers;
 using Orchard.ContentManagement.Handlers;
+using Orchard.Localization;
 
 namespace Lombiq.Readonly.Drivers
 {
@@ -28,7 +29,7 @@ namespace Lombiq.Readonly.Drivers
 
         protected override DriverResult Editor(ReadonlySettingsPart part, IUpdateModel updater, dynamic shapeHelper)
         {
-            updater.TryUpdateModel(part, Prefix, null, null);
+            updater.TryUpdateModel(part, Prefix, null, null); 
             return Editor(part, shapeHelper);
         }
 
