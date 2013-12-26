@@ -8,7 +8,7 @@ using Orchard.ContentManagement.Records;
 
 namespace Lombiq.Readonly.Models
 {
-    public class ReadonlySettingsPart : ContentPart<ReadonlySettingsPartRecord>
+    public class ReadonlySettingsPart : ContentPart<ReadonlySettingsPartRecord>, IReadonlyAspect
     {
         public bool Readonly
         {
