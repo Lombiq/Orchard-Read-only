@@ -5,9 +5,9 @@ using System.Web;
 using Orchard.Commands;
 using Orchard.Settings;
 using Orchard.ContentManagement;
-using Lombiq.Readonly.Models;
+using Lombiq.Hosting.Readonly.Models;
 
-namespace Lombiq.Readonly.Commands
+namespace Lombiq.Hosting.Readonly.Commands
 {
     public class ReadonlyCommands : DefaultOrchardCommandHandler
     {

@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using Lombiq.Readonly.Models;
+using Lombiq.Hosting.Readonly.Models;
 using Orchard.Data.Migration;
 
-namespace Lombiq.Readonly
+namespace Lombiq.Hosting.Readonly
 {
     public class Migrations : DataMigrationImpl
     {

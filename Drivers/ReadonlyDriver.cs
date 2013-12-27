@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using Lombiq.Readonly.Models;
+using Lombiq.Hosting.Readonly.Models;
 using Orchard.ContentManagement;
 using Orchard.ContentManagement.Drivers;
 using Orchard.Localization;
 using Orchard.Settings;
 
-namespace Lombiq.Readonly.Drivers
+namespace Lombiq.Hosting.Readonly.Drivers
 {
     public class ReadonlyDriver : ContentPartDriver<ContentPart>
     {

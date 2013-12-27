@@ -1,4 +1,4 @@
-﻿Name: Readonly
+﻿Name: Hosting - Readonly
 AntiForgery: enabled
 Author: Lombiq
 Website: http://orchardreadonly.codeplex.com
@@ -6,7 +6,7 @@ Version: 1.0
 OrchardVersion: 1.6
 Description: You can set an Orchard site to read-only mode with this module as it can prevent content items from being saved.
 Features:
-    Lombiq.Readonly:
+    Lombiq.Hosting.Readonly:
 		Name: Readonly
         Description: You can set an Orchard site to read-only mode with this module as it can prevent content items from being saved.
-		Category: Developer
+		Category: Hosting

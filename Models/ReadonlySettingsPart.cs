@@ -6,7 +6,7 @@ using Orchard.ContentManagement;
 using Orchard.ContentManagement.FieldStorage.InfosetStorage;
 using Orchard.ContentManagement.Records;
 
-namespace Lombiq.Readonly.Models
+namespace Lombiq.Hosting.Readonly.Models
 {
     public class ReadonlySettingsPart : ContentPart<ReadonlySettingsPartRecord>, IReadonlyAspect
     {

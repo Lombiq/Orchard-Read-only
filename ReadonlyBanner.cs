@@ -7,9 +7,9 @@ using Orchard.Settings;
 using Orchard.UI.Admin.Notification;
 using Orchard.UI.Notify;
 using Orchard.ContentManagement;
-using Lombiq.Readonly.Models;
+using Lombiq.Hosting.Readonly.Models;
 
-namespace Lombiq.Readonly
+namespace Lombiq.Hosting.Readonly
 {
     public class ReadonlyBanner : INotificationProvider
     {

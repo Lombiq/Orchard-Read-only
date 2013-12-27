@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using Orchard.ContentManagement;
 
-namespace Lombiq.Readonly.Models
+namespace Lombiq.Hosting.Readonly.Models
 {
     public interface IReadonlyAspect : IContent
     {
