@@ -8,37 +8,24 @@ using Orchard.ContentManagement.Records;
 
 namespace Lombiq.Hosting.Readonly.Models
 {
-    public class ReadonlySettingsPart : ContentPart<ReadonlySettingsPartRecord>, IReadonlyAspect
+    public class ReadonlySettingsPart : ContentPart, IReadonlyAspect
     {
         public bool Readonly
         {
-            get { return Record.Readonly; }
-            set { Record.Readonly = value; }
+            get { return this.Retrieve(x => x.Readonly); }
+            set { this.Store(x => x.Readonly, value); }
         }
-
+    
         public bool Force
         {
-            get { return bool.Parse(this.As<InfosetPart>().Get("ReadonlySettingsPart", "Force") ?? "False"); }
-            set { this.As<InfosetPart>().Set("ReadonlySettingsPart", "Force", value.ToString()); }
+            get { return this.Retrieve(x => x.Force); }
+            set { this.Store(x => x.Force, value); }
         }
 
         public string Message
         {
-            get { return Record.Message; }
-            set { Record.Message = value; }
-        }
-    }
-
-
-    public class ReadonlySettingsPartRecord : ContentPartRecord
-    {
-        public virtual bool Readonly { get; set; }
-        public virtual string Message { get; set; }
-
-
-        public ReadonlySettingsPartRecord()
-        {
-            Message = "The site is currently in read-only mode. Please re-send the form in a few minutes.";
+            get { return this.Retrieve(x => x.Message, "The site is currently in read-only mode. Please re-send the form in a few minutes."); }
+            set { this.Store(x => x.Message, value); }
         }
     }
 }

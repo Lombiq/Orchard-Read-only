@@ -10,9 +10,8 @@ namespace Lombiq.Hosting.Readonly.Handlers
 {
     public class ReadonlySettingsPartHandler : ContentHandler
     {
-        public ReadonlySettingsPartHandler(IRepository<ReadonlySettingsPartRecord> repository)
+        public ReadonlySettingsPartHandler()
         {
-            Filters.Add(StorageFilter.For(repository));
             Filters.Add(new ActivatingFilter<ReadonlySettingsPart>("Site"));
         }
     }

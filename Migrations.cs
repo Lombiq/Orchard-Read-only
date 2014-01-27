@@ -11,15 +11,16 @@ namespace Lombiq.Hosting.Readonly
     {
         public int Create()
         {
-            SchemaBuilder.CreateTable(typeof(ReadonlySettingsPartRecord).Name,
-                table => table
-                    .ContentPartRecord()
-                    .Column<bool>("Readonly")
-                    .Column<string>("Message", column => column.WithLength(2048))
-                );
+            // Only creation of the ReadonlySettingsPartRecord table was here. 
 
+            return 2;
+        }
 
-            return 1;
+        public int UpdateFrom1()
+        {
+            SchemaBuilder.DropTable("ReadonlySettingsPartRecord");
+
+            return 2;
         }
     }
 }
