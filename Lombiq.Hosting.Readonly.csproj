@@ -13,7 +13,7 @@
     <RootNamespace>Lombiq.Hosting.Readonly</RootNamespace>
     <AssemblyName>Lombiq.Hosting.Readonly</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <MvcBuildViews>false</MvcBuildViews>
+    <MvcBuildViews Condition=" '$(BuildViews)' == 'true' ">true</MvcBuildViews>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <OldToolsVersion>4.0</OldToolsVersion>
