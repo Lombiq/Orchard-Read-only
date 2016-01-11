@@ -9,14 +9,14 @@
                 @Html.EditorFor(m => m.Readonly)
                 <label for="@Html.FieldIdFor(m => m.Readonly)" class="forcheckbox">@T("Is read-only")</label>
                 @Html.ValidationMessageFor(m => m.Readonly)
-                <span class="hint">@T("If checked, no content item can be saved.")</span>
+                @Html.Hint(T("If checked, no content item can be saved."))
             </li>
         }
         <li>
             @Html.LabelFor(m => m.Message, T("Message"))
             @Html.TextBoxFor(m => m.Message, new { @class = "text large" })
             @Html.ValidationMessageFor(m => m.Message)
-            <span class="hint">@T("This message will be displayed when someone tries to save a content item while the site is read-only.")</span>
+            @Html.Hint(T("This message will be displayed when someone tries to save a content item while the site is read-only."))
         </li>
     </ol>
 </fieldset>
