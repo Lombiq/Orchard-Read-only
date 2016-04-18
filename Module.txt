@@ -3,7 +3,7 @@ AntiForgery: enabled
 Author: Lombiq
 Website: https://github.com/Lombiq/Orchard-Read-only
 Version: 1.0
-OrchardVersion: 1.9.2
+OrchardVersion: 1.9.3
 Description: You can set an Orchard site to read-only mode with this module as it can prevent content items from being saved.
 Features:
     Lombiq.Hosting.Readonly:
