@@ -17,7 +17,7 @@ You can set an Orchard site to read-only mode with this module as it can prevent
 
 ## Documentation
 
-This modules gives you an option to set your Orchard site into read-only mode. Read-only mode is useful if you want to temporally content-freeze your site (only advised for a very short time).
+This modules gives you an option to set your Orchard site into read-only mode. Read-only mode is useful if you want to temporarily content-freeze your site (only advised for a very short time).
 
 When read-only no content item (except for site settings) can be saved as saving will fail with a validation error. The error message displayed is customizable.
 
