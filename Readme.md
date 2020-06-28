@@ -1,8 +1,8 @@
-# Orchard Read-only Readme
+# Orchard Read-only
 
 
 
-## Project Description
+## About
 
 You can set an Orchard site to read-only mode with this module as it can prevent content items from being saved.
 
@@ -25,12 +25,9 @@ You can edit settings from under site settings and also you can set the mode of 
 
 Read-only is part of the [Lombiq Hosting Suite](http://dotnest.com/knowledge-base/topics/lombiq-hosting-suite), a suite of modules making Orchard able to scale better, more fault-tolerant, and have improved maintainability.
 
-The module's source is available in two public source repositories, automatically mirrored in both directions with [Git-hg Mirror](https://githgmirror.com):
 
-- [https://bitbucket.org/Lombiq/orchard-read-only](https://bitbucket.org/Lombiq/orchard-read-only) (Mercurial repository)
-- [https://github.com/Lombiq/Orchard-Read-only](https://github.com/Lombiq/Orchard-Read-only) (Git repository)
+## Contributing and support
 
-Bug reports, feature requests and comments are warmly welcome, **please do so via GitHub**.
-Feel free to send pull requests too, no matter which source repository you choose for this purpose.
+Bug reports, feature requests, comments, questions, code contributions, and love letters are warmly welcome, please do so via GitHub issues and pull requests. Please adhere to our [open-source guidelines](https://lombiq.com/open-source-guidelines) while doing so.
 
-This project is developed by [Lombiq Technologies Ltd](http://lombiq.com/). Commercial-grade support is available through Lombiq.
+This project is developed by [Lombiq Technologies](https://lombiq.com/). Commercial-grade support is available through Lombiq.
